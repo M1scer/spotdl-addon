@@ -1,10 +1,10 @@
 FROM spotdl/spotify-downloader:latest
 
-# Kopiere das run.sh-Skript
-COPY run.sh /
+# Kopiere das run.sh-Skript in das Container-Verzeichnis
+COPY run.sh /run.sh
 
 # Berechtigung für run.sh setzen
-RUN chmod a+x /run.sh
+RUN chmod +x /run.sh
 
 # Startbefehl für das Skript
-ENTRYPOINT [ "/run.sh" ]
+ENTRYPOINT ["/bin/bash", "/run.sh"]
