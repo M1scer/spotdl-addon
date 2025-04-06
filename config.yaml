@@ -1,5 +1,5 @@
 name: "SpotDL Webserver"
-version: "0.0.1"
+version: "0.0.2"
 slug: "spotdl"
 description: "A web server to use SpotDL for downloading Spotify songs."
 url: "https://github.com/spotDL/spotify-downloader"
