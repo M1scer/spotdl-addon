@@ -7,4 +7,4 @@ COPY run.sh /run.sh
 RUN chmod +x /run.sh
 
 # Startbefehl für das Skript
-ENTRYPOINT ["/bin/bash", "/run.sh"]
+ENTRYPOINT ["/run.sh"]
