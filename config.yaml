@@ -3,23 +3,14 @@ version: "0.0.1"
 slug: "spotdl"
 description: "A web server to use SpotDL for downloading Spotify songs."
 url: "https://github.com/spotDL/spotify-downloader"
-startup: "application"
-boot: "auto"
-image: "ghcr.io/spotdl/spotify-downloader:latest"
 arch:
   - armhf
   - armv7
   - aarch64
   - amd64
   - i386
-host_network: true
 ports:
   "8080": 8080
-options: {}
-schema: {}
-init: true
 map:
   - "share:rw"
   - "media:rw"
-shell_command:
-  download_spotify_song: 'curl -X POST "http://localhost:8080/download?url={{ song_url }}"'
