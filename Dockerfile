@@ -1,4 +1,4 @@
-FROM ghcr.io/spotdl/spotify-downloader:latest
+FROM spotdl/spotify-downloader:latest
 
 # Kopiere das run.sh-Skript
 COPY run.sh /
