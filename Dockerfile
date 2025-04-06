@@ -1,10 +1,14 @@
-FROM ghcr.io/spotdl/spotify-downloader:latest
+# Verwende das Python-basierte Home Assistant Addon-Base
+FROM ghcr.io/hassio-addons/addon-base-python:latest
 
-# Kopiere das run.sh-Skript
-COPY run.sh /
+# Installiere SpotDL und andere Abhängigkeiten
+RUN pip install spotdl
 
-# Berechtigung für run.sh setzen
-RUN chmod a+x /run.sh
+# Kopiere das Skript, das den Download startet
+COPY run.sh /usr/local/bin/run.sh
 
-# Startbefehl für das Skript
-ENTRYPOINT [ "/run.sh" ]
+# Arbeitsverzeichnis setzen
+WORKDIR /usr/local/bin
+
+# Starte das Skript
+CMD ["/bin/bash", "run.sh"]

@@ -21,3 +21,5 @@ init: true
 map:
   - "share:rw"
   - "media:rw"
+shell_command:
+  download_spotify_song: 'curl -X POST "http://localhost:8080/download?url={{ song_url }}"'
