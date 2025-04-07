@@ -1,4 +1,4 @@
-FROM ghcr.io/m1scer/spotspot:latest
+FROM ghcr.io/m1scer/spotspot
 
 # # Erstelle das Verzeichnis für Musik
 # RUN mkdir /media/download
