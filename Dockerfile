@@ -10,4 +10,4 @@ VOLUME /media/download
 WORKDIR /media/download
 
 # Standard-ENTRYPOINT, um den Webserver zu starten
-ENTRYPOINT ["poetry", "run", "spotdl", "web", "--host", "0.0.0.0", "--web-use-output-dir", "--allowed-origins", "*"]
+ENTRYPOINT ["poetry", "run", "spotdl", "web", "--host", "0.0.0.0", "--web-use-output-dir", "--keep-alive","--allowed-origins", "*"]
