@@ -1,5 +1,5 @@
 name: "SpotDL Webserver"
-version: "0.0.15"
+version: "0.0.16"
 slug: "spotdl"
 description: "A web server to use SpotDL for downloading Spotify songs."
 url: "https://github.com/spotDL/spotify-downloader"
@@ -10,9 +10,7 @@ arch:
   - aarch64
   - amd64
   - i386
-ports:
-  "8800/tcp": 8800
-webui: "http://[HOST]:[PORT:8800]"
+ingress: true
 map:
   - "share:rw"
   - "media:rw"
