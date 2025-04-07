@@ -1,5 +1,5 @@
 name: "SpotDL Webserver"
-version: "0.0.24"
+version: "0.0.25"
 slug: "spotdl"
 description: "A web server to use SpotDL for downloading Spotify songs."
 url: "https://github.com/spotDL/spotify-downloader"
@@ -33,10 +33,10 @@ schema:
   M3U_PLAYLIST_PATH: str?
 
 environment:
-  TRACK_OUTPUT: "!env TRACK_OUTPUT /media"
-  ALBUM_OUTPUT: "!env ALBUM_OUTPUT /media"
-  PLAYLIST_OUTPUT: "!env PLAYLIST_OUTPUT /media"
-  ARTIST_OUTPUT: "!env ARTIST_OUTPUT /media"
-  ABSOLUTE_SERVER_PATH: "!env ABSOLUTE_SERVER_PATH /media"
-  M3U_PLAYLIST_PATH: "!env M3U_PLAYLIST_PATH /media"
-
+  TRACK_OUTPUT: ${TRACK_OUTPUT}
+  ALBUM_OUTPUT: ${ALBUM_OUTPUT}
+  PLAYLIST_OUTPUT: ${PLAYLIST_OUTPUT}
+  ARTIST_OUTPUT: ${ARTIST_OUTPUT}
+  ABSOLUTE_SERVER_PATH: ${ABSOLUTE_SERVER_PATH}
+  M3U_PLAYLIST_PATH: ${M3U_PLAYLIST_PATH}
+  HEADLESS: TRUE
