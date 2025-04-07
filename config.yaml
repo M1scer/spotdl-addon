@@ -12,7 +12,6 @@ arch:
   - i386
 ports:
   "8800/tcp": 8800
-webui: "http://[HOST]:8800"
 map:
   - "share:rw"
   - "media:rw"
