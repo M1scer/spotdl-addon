@@ -15,4 +15,4 @@ ports:
 map:
   - "share:rw"
   - "media:rw"
-"webui": "http://[HOST]:8800"
+webui: "http://[HOST]:8800"
