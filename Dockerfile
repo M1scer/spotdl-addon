@@ -1,4 +1,4 @@
-FROM tanner23456/playlistdl:v2
+FROM ghcr.io/mattblackonly/spotspot:latest
 
 # # Erstelle das Verzeichnis für Musik
 # RUN mkdir /media/download
