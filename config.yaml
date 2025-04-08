@@ -1,5 +1,5 @@
 name: "SpotDL Webserver"
-version: "0.0.44"
+version: "0.0.45"
 slug: "spotdl"
 description: "A web server to use SpotDL for downloading Spotify songs."
 url: "https://github.com/spotDL/spotify-downloader"
@@ -17,7 +17,7 @@ map:
 panel_icon: mdi:spotify
 
 webui: http://[HOST]:[PORT:6544]
-hostnetwork: true
+host_network: true
 
 options:
   TRACK_OUTPUT: "/media"
