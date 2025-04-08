@@ -1,5 +1,5 @@
 name: "SpotDL Webserver"
-version: "0.0.36"
+version: "0.0.37"
 slug: "spotdl"
 description: "A web server to use SpotDL for downloading Spotify songs."
 url: "https://github.com/spotDL/spotify-downloader"
@@ -40,3 +40,4 @@ environment:
   ABSOLUTE_SERVER_PATH: "${ABSOLUTE_SERVER_PATH}"
   M3U_PLAYLIST_PATH: "${M3U_PLAYLIST_PATH}"
   HOST: 0.0.0.0
+  ALLOWED_ORIGINS: "*"
