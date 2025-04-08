@@ -1,5 +1,5 @@
 name: "SpotDL Webserver"
-version: "0.0.34"
+version: "0.0.35"
 slug: "spotdl"
 description: "A web server to use SpotDL for downloading Spotify songs."
 url: "https://github.com/spotDL/spotify-downloader"
@@ -10,7 +10,7 @@ arch:
   - amd64
   - i386
 ingress: true
-ingress_port: 5000
+ingress_port: 6544
 map:
   - "share:rw"
   - "media:rw"
@@ -39,4 +39,3 @@ environment:
   ARTIST_OUTPUT: "${ARTIST_OUTPUT}"
   ABSOLUTE_SERVER_PATH: "${ABSOLUTE_SERVER_PATH}"
   M3U_PLAYLIST_PATH: "${M3U_PLAYLIST_PATH}"
-  HOST: "homeassistant.jehle24.de/hassio/ingress/a914fd44_spotdl"
