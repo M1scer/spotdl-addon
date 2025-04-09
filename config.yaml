@@ -1,5 +1,5 @@
 name: "SpotDL Webserver"
-version: "0.0.64"
+version: "0.0.65"
 slug: "spotdl"
 description: "A web server to use SpotDL for downloading Spotify songs."
 url: "https://github.com/spotDL/spotify-downloader"
@@ -17,7 +17,6 @@ map:
 panel_icon: mdi:spotify
 
 options:
-  SOCKETIO_PATH: "/hassio/ingress/a914fd44_spotdl/socket.io"
   TRACK_OUTPUT: "/media"
   ALBUM_OUTPUT: "/media"
   PLAYLIST_OUTPUT: "/media"
